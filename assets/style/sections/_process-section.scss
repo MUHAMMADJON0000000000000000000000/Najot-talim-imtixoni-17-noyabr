@@ -1,0 +1,57 @@
+.process-section {
+  padding: 60px 0;
+
+  border-top: 5px solid #66bb6a;
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    // color: $text-color;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: $text-color;
+    margin-bottom: 40px;
+    .highlight {
+      color: $main-color;
+      font-weight: 600;
+    }
+  }
+}
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 10px;
+}
+
+.process-step {
+  position: relative;
+  padding-top: 40px;
+  border-top: 1px solid #ddd;
+  min-height: 80px;
+
+  .step-number {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $main-color;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .step-description {
+    font-size: 14px;
+    color: $text-color;
+  }
+}

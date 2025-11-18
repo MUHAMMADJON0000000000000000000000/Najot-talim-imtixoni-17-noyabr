@@ -7,5 +7,10 @@
 @use "./base";
 
 @use "./sections/nav";
-@use "./sections/features";
+@use "./sections/process-section.scss";
+@use "./sections/help-section";
+@use "./sections/popular-cars";
+@use "./sections/calculation";
+@use "./sections/consultation";
+
 @use "./sections/services";
