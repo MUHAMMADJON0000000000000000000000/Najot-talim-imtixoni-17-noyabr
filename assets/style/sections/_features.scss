@@ -1,0 +1,17 @@
+section {
+  width: 1445px;
+}
+.features__icon {
+  margin: 0 auto;
+  text-align: center;
+  &__wrapper {
+    background-color: rgb(220, 138, 38);
+    width: 353px;
+    height: 246px;
+    angle: 0 deg;
+    opacity: 1;
+    top: 1438px;
+    left: 1327px;
+    border-radius: 22px;
+  }
+}
