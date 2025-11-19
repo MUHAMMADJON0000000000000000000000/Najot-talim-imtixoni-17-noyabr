@@ -1,16 +1,16 @@
-@use "./variables/colors";
-@use "./variables/fonts";
-@use "./variables/units";
+@forward "../style/variables/colors";
+@forward "../style/variables/fonts";
+@forward "../style/variables/units";
 
-@use "./mixins/media-mixins";
+@forward "../style/mixins/media-mixins";
 
-@use "./base";
+@forward "../style/base";
 
-@use "./sections/nav";
-@use "./sections/process-section.scss";
-@use "./sections/help-section";
-@use "./sections/popular-cars";
-@use "./sections/calculation";
-@use "./sections/consultation";
+@forward "../style/sections/nav";
+@forward "../style/sections/process-section";
+@forward "../style/sections/process-section";
+@forward "../style/sections/popular-cars";
+@forward "../style/sections/calculation";
+@forward "../style/sections/consultatforward";
 
-@use "./sections/services";
+@forward "./sections/services";

@@ -1,3 +1,5 @@
+// @use "variables/colors" as *;
+
 * {
   font-family: sans-serif;
   margin: 0;
@@ -37,7 +39,7 @@ body {
 }
 
 p {
-  // color: $primary-color;
+  color: $primary-color;
 }
 
 h1,
