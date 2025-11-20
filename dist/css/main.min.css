@@ -120,3 +120,666 @@ section {
   left: 1327px;
   border-radius: 22px;
 } /*# sourceMappingURL=main.min.css.map */
+
+/* ================================== */
+/* Asosiy O'zgaruvchilar (Taxminiy qiymatlar) */
+/* ================================== */
+/* Agar sizda global ranglar aniqlangan bo'lsa, ularni bu yerda o'zgartiring */
+:root {
+  --main-color: #e53935; /* Qizil rang */
+  --text-color: #333; /* To'q kulrang matn */
+}
+
+/* ================================== */
+/* 1. Jarayon bo'limi (.process-section) */
+/* ================================== */
+
+.process-section {
+  padding: 60px 0;
+  border-top: 5px solid #66bb6a;
+}
+
+.process-section__title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.process-section__subtitle {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.process-section__subtitle .highlight {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 10px;
+}
+
+.process-step {
+  position: relative;
+  padding-top: 40px;
+  border-top: 1px solid #ddd;
+  min-height: 80px;
+}
+
+.process-step .step-number {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.process-step .step-description {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+/* ================================== */
+/* 2. Yordam bo'limi (.help-section) */
+/* ================================== */
+
+.help-section {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+
+.help-section .help-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.help-section .help-content {
+  width: 50%;
+  z-index: 1;
+}
+
+.help-section .help-content__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.help-section .help-content__subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.help-section .phone-input-wrapper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-right: 10px;
+}
+
+.help-section .phone-input-wrapper span {
+  color: #777;
+  font-weight: 500;
+  padding-right: 5px;
+}
+
+.help-section .phone-input-wrapper input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 150px;
+}
+
+.help-section .consult-btn {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.help-section .consult-btn:hover {
+  background-color: #c4312d; /* darken($main-color, 10%) */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+  margin-top: 30px;
+  max-width: 450px;
+}
+
+.features-grid .feature-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features-grid .feature-item .icon {
+  font-size: 18px;
+  color: var(--main-color);
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+  line-height: 1;
+}
+
+.features-grid .feature-item .text {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.car-image-wrapper {
+  position: absolute;
+  right: -120px;
+  bottom: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.car-image-wrapper .blue-car-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .help-card {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .help-content {
+    width: 100%;
+  }
+
+  .car-image-wrapper {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+}
+
+/* =========================================== */
+/* 3. Mashhur Avtomobillar Bo'limi (.popular-cars-section) */
+/* =========================================== */
+
+.popular-cars-section {
+  padding: 80px 0;
+}
+
+.popular-cars-section .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cars-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.car-card {
+  width: 300px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card.highlighted {
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.5); /* $main-color ishtirok etgan soya */
+}
+
+.car-card .car-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.car-card .car-info {
+  padding: 20px;
+}
+
+.car-card .car-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.car-card .car-specs {
+  margin-bottom: 15px;
+}
+
+.car-card .car-specs .spec-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 2px 0;
+  border-bottom: 1px dotted #eee;
+}
+
+.car-card .car-specs .spec-row .spec-value {
+  font-weight: 600;
+}
+
+.car-card .car-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.car-card .car-price .price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.car-card .car-price .price-new {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.car-card .price-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #777;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.car-card .price-labels .label-right {
+  max-width: 90px;
+}
+
+.car-card .select-btn {
+  width: 100%;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.car-card .select-btn:hover {
+  background-color: #c4312d;
+}
+
+/* =========================================== */
+/* 4. Hisob-kitob Bo'limi (.calculation-section) */
+/* =========================================== */
+
+.calculation-section {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.calculation-section .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.calculation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.calc-item {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.calc-item--image {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+}
+
+.calc-item--image .item-content {
+  z-index: 2;
+  position: relative;
+}
+
+.calc-item--image .calc-image {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  width: 70%;
+  opacity: 0.6;
+}
+
+.calc-item .item-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.calc-item .item-description {
+  font-size: 12px;
+  color: #777;
+  min-height: 35px;
+}
+
+.calc-item .item-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-top: 15px;
+}
+
+.calc-item .item-price.highlight-price {
+  color: var(--main-color);
+}
+
+.calc-item .item-price .ruble {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.total-prices {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.total-prices .total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.total-prices .total-row--final {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.total-prices .total-row--final .final-price {
+  color: var(--main-color);
+}
+
+.total-prices .total-row--analog {
+  font-size: 16px;
+  color: #777;
+  font-style: italic;
+}
+
+.total-prices .total-row--analog .analog-price {
+  text-decoration: line-through;
+}
+
+/* ================================== */
+/* 5. Konsultatsiya bloki (.consultation-section) */
+/* ================================== */
+
+.consultation-section {
+  padding: 60px 0;
+}
+
+.consultation-section .consultation-card {
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 50px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.consultation-section .card-content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+}
+
+.consultation-section .card-title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.consultation-section .card-title .highlight {
+  color: var(--main-color);
+}
+
+.consultation-section .card-text {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  max-width: 350px;
+}
+
+.consultation-section .consultation-btn {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.consultation-section .consultation-btn:hover {
+  background-color: #c4312d;
+}
+
+.consultation-section .consultation-car-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: auto;
+}
+
+/* ================================== */
+/* 6. Kontaktlar Bo'limi (.contacts-section) */
+/* ================================== */
+
+.contacts-section {
+  padding: 60px 0;
+}
+
+.contacts-section .section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contacts-section .contacts-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contacts-section .contact-card {
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.contacts-section .map-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contacts-section .map-wrapper .map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contacts-section .map-wrapper .map-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background: var(--main-color);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.contacts-section .branch-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contacts-section .address {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.contacts-section .phone-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+/* ================================== */
+/* 7. Futer (Footer) (.main-footer) */
+/* ================================== */
+
+.main-footer {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+}
+
+.main-footer .footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.main-footer .footer-col {
+  font-size: 14px;
+}
+
+.main-footer .footer-col--logo .footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.main-footer .footer-col--logo .copyright,
+.main-footer .footer-col--logo .disclaimer {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.main-footer .footer-col--logo .copyright a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.main-footer .col-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.main-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer .footer-links li {
+  margin-bottom: 8px;
+}
+
+.main-footer .footer-links li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.main-footer .footer-links li a:hover {
+  color: var(--main-color);
+}
+
+.main-footer .footer-col--contact {
+  text-align: right;
+}
+
+.main-footer .footer-col--contact .footer-phone-btn {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.main-footer .footer-col--contact .footer-address {
+  font-size: 14px;
+  color: #777;
+}
