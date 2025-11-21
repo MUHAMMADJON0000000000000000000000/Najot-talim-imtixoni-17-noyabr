@@ -1,14 +1,9 @@
-@forward "../style/variables/colors";
-@forward "../style/variables/fonts";
-@forward "../style/variables/units";
+@import "./variables/colors";
+@import "./variables/fonts";
+@import "./variables/units";
 
-@forward "../style/mixins/media-mixins";
+@import "./mixins/media-mixins";
 
-@forward "../style/base";
+@import "./base";
 
-@forward "../style/sections/nav";
-@forward "../style/sections/process-section";
-@forward "../style/sections/process-section";
-@forward "../style/sections/cars-grid";
-@forward "../style/sections/calculation";
-@forward "../style/sections/consultatforward";
+@import "./sections/services";
